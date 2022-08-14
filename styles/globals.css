@@ -1,0 +1,283 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+:root {
+  --main-color: #4252f8;
+  --body-bg-color: #f5f5f5;
+  --header-color: #fff;
+  --header-text: #000;
+  --theme-hover-color: #f0f0f0;
+
+  /* Social Media Button */
+  --link-bg: #f6f6f6;
+  --facebook-bg-color: #343434;
+  --facebook-hover-color: #3995ff;
+  --twitter-hover-color: #00acee;
+  --telegram-hover-color: #2581af;
+
+  --post-color: #fff;
+  --card-border-bottom: #f2f2f2;
+  --card-footer-link-bg: #f3f3f3;
+
+  /* Text Color Variables */
+  --text-primary: #fff;
+  --text-secondary: #000;
+  --text-content: #4d5156;
+  --card-footer-text: #000;
+
+  /* Badge Color Variables */
+  --badge-dream-bg-color: #022d8235;
+  --badge-dream-color: #022d82;
+  --badge-lie-bg-color: #00aeff2b;
+  --badge-lie-color: #00aeff;
+
+  /* Random badge color */
+  --color-green: #1a7f37;
+  --color-bg-green: #dafbe1;
+  --color-danger: #cf222e;
+  --color-bg-danger: #ffebe9;
+  --color-sever: #bc4c00;
+  --color-bg-sever: #fff1e5;
+  --color-violet: #8250df;
+  --color-bg-violet: #8250df35;
+  --color-orange: #9a6700;
+  --color-bg-orange: #9a670035;
+  --color-dark-pink: #bc006b;
+  --color-bg-dark-pink: #bc006b2b;
+  --color-light-violet: #a600cc;
+  --color-bg-light-violet: #a600cc42;
+  --color-brown: #333333;
+  --color-bg-brown: #53535369;
+
+  /* Create Page Color */
+  --form-header: #000;
+  --border-color: #f5f5f5;
+  --form-control-border: #f1f1f1;
+  --btn-submit-hover: #5662eb;
+  --input-bg-color: #fff;
+  --container-bg: #fff;
+}
+
+html.dark{
+  --body-bg-color: #1f2328;
+  --header-color: #2a2f36;
+  --header-text: #fff;
+  --text-secondary: #fff;
+  --theme-hover-color: #3a4453;
+  --post-color: #2a2f36;
+  --text-content: #86919e;
+
+  --badge-dream-bg-color: #3b5da126;
+  --badge-dream-color: #7096e1;
+  --color-brown: #777;
+  --color-bg-green: #1a7f373d;
+  --color-bg-danger: #cf222e21;
+  --color-bg-sever: #bc4c0026;
+  --color-bg-violet: #8250df26;
+
+  --card-footer-link-bg: #31373f;
+  --link-bg: #31373f;
+  --container-bg: #2a2f36;
+
+  --border-color: #40464f;
+  --card-border-bottom: #40464f;
+  --form-control-border: #3e444c;
+  --input-bg-color: #2a2f36;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: var(--body-bg-color);
+  min-height: 100vh;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--main-color);
+  border-radius: 10px;
+}
+
+/* Grid Layout Style */
+
+.nam-grid {
+  list-style: none;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* clearfix */
+
+.nam-grid:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.post-item {
+  margin: 20px 20px 0 0;
+  height: auto;
+  width: 340px;
+  float: left;
+  background: var(--post-color);
+  border-radius: 5px;
+  padding: 5px;
+}
+
+/* Card Badge Style */
+
+.badge {
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-weight: 500;
+}
+
+.badge-dream {
+  background-color: var(--badge-dream-bg-color);
+  color: var(--badge-dream-color);
+}
+
+.badge-dream:hover {
+  background-color: var(--badge-dream-color);
+  color: var(--text-primary);
+}
+
+.badge-lie {
+  background-color: var(--badge-lie-bg-color);
+  color: var(--badge-lie-color);
+}
+
+.badge-lie:hover {
+  background-color: var(--badge-lie-color);
+  color: var(--text-primary);
+}
+
+.badge-guilt {
+  background-color: var(--color-bg-green);
+  color: var(--color-green);
+}
+
+.badge-guilt:hover {
+  background-color: var(--color-green);
+  color: var(--text-primary);
+}
+
+.badge-pain {
+  background-color: var(--color-bg-danger);
+  color: var(--color-danger);
+}
+
+.badge-pain:hover {
+  background-color: var(--color-danger);
+  color: var(--text-primary);
+}
+
+.badge-truth {
+  background-color: var(--color-bg-sever);
+  color: var(--color-sever);
+}
+
+.badge-truth:hover {
+  background-color: var(--color-sever);
+  color: var(--text-primary);
+}
+
+.badge-fantacy {
+  background-color: var(--color-bg-violet);
+  color: var(--color-violet);
+}
+
+.badge-fantacy:hover {
+  background-color: var(--color-violet);
+  color: var(--text-primary);
+}
+
+.badge-rand-feeling {
+  background-color: var(--color-bg-orange);
+  color: var(--color-orange);
+}
+
+.badge-rand-feeling:hover {
+  background-color: var(--color-orange);
+  color: var(--text-primary);
+}
+
+.badge-first-exp {
+  background-color: var(--color-bg-dark-pink);
+  color: var(--color-dark-pink);
+}
+
+.badge-first-exp:hover {
+  background-color: var(--color-dark-pink);
+  color: var(--text-primary);
+}
+
+.badge-wild-exp {
+  background-color: var(--color-bg-light-violet);
+  color: var(--color-light-violet);
+}
+
+.badge-wild-exp:hover {
+  background-color: var(--color-light-violet);
+  color: var(--text-primary);
+}
+
+.badge-others{
+  background-color: var(--color-bg-brown);
+  color: var(--color-brown);
+}
+
+.badge-others:hover{
+  background-color: var(--color-brown);
+  color: var(--text-primary);
+}
+
+.mobile-btn {
+  display: none;
+  position: fixed;
+  bottom: 25px;
+  width: 100%;
+  text-align: center;
+}
+
+
+/* @media query Responsive Design */
+
+@media screen and (max-width: 700px) {
+
+  .post-item {
+    margin-right: 0;
+  }
+
+  
+  .mobile-btn {
+    display: block;
+  }
+  
+}
+
+/*Remove Appearance of Input number*/
+input[type='number'] {
+  -moz-appearance:textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.active-footer .mobile-btn{
+  display: none;
+}
