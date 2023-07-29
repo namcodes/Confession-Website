@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "masonry-layout-nextjs": "^1.0.0",
-    "mongoose": "^6.5.1",
+    "mongoose": "^6.11.3",
     "next": "12.2.4",
     "nprogress": "^0.2.0",
     "react": "18.2.0",
